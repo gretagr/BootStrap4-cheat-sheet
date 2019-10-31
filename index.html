@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap 4.3 cheat sheet</title>
+  </head>
+  <body>
+    <div class="container mb-5">
+      <h1 class="display-3 text-center">BOOTSTRAP</h1>
+      <h2 class="display-5 text-muted text-center">cheat-sheet</h2>
+    </div>
+    <h3 class="header">1. CONTAINER: bootstrap konteineriai</h3></div>
+    <div class="container-fluid bg-primary text-white my-2">
+      <p>1. .container-fluid: užima 100% ekrano pločio, turi vidines paraštes iš abiejų pusių po 15px (padding)</p>
+    </div>
+    <div class="container bg-primary text-white my-2">
+      <p>2. .container: turi max-width parametrą kuris priklauso nuo ekrano dydžio. automatiškai lygiuojamas per vidurį ekrano, turi vidines paraštes iš abiejų pusių po 15px (padding)</p>
+    </div>
+
+    <!-- Responsive dizaino lūžio taškai (brakpoints): -->
+
+    <div class="container">
+      <h3 class="header">2. BREAKPOINTS: responsive dizaino lūžio taškai</h3>
+      <pre class="lead">
+      @media (min-width: 576px) small klasė: sm
+      @media (min-width: 768px) medium klasė: md
+      @media (min-width: 992px) large klasė: lg
+      @media (min-width: 1200px) extra large klasė: xl
+      </pre>
+      <p class="lead"><strong>SVARBU:</strong> rašydami bootstrap klases prisiminkite, kad bootstrap naudoja mobile-first principą, o tai reiškia, kad visa struktūra pirmiausia rašoma ekranams iki 576px dydžio. Jeigu nenurodyta kitaip, tie patys stiliai bus taikomi visiems dydžiams.</p>
+    </div>
+
+
+    <!-- fono spalvų klasės -->
+    <div class="container">
+      <h3 class="header">3. BACKGROUND-COLOR: fono spalvos</h3>
+    </div>
+    <div class="container p-3 bg-lightgrey">
+      <div class="container-fluid bg-primary p-4 mb-3">Klasė: bg-primary</div>
+      <div class="container-fluid bg-secondary p-4 mb-3">Klasė: bg-secondary</div>
+      <div class="container-fluid bg-success p-4 mb-3">Klasė: bg-success</div>
+      <div class="container-fluid bg-warning p-4 mb-3">Klasė: bg-warning</div>
+      <div class="container-fluid bg-danger p-4 mb-3">Klasė: bg-danger</div>
+      <div class="container-fluid bg-info p-4 mb-3">Klasė: bg-info</div>
+      <div class="container-fluid bg-dark text-light p-4 mb-3">Klasė: bg-dark</div>
+      <div class="container-fluid bg-light p-4 mb-3">Klasė: bg-light</div>
+      <div class="container-fluid bg-white p-4 mb-3">Klasė: bg-white</div>
+      <div class="container-fluid bg-transparent p-4">Klasė: bg-transparent</div>
+    </div>
+
+    <!-- teksto spavos  -->
+
+    <div class="container">
+      <h3 class="header">4. COLOR: teksto spalva</h3>
+
+      <p class="text-primary">.text-primary</p>
+      <p class="text-secondary">.text-secondary</p>
+      <p class="text-success">.text-success</p>
+      <p class="text-warning">.text-warning</p>
+      <p class="text-danger">.text-danger</p>
+      <p class="text-info">.text-info</p>
+      <p class="text-dark">.text-dark</p>
+      <p class="text-light bg-dark">.text-light</p>
+      <p class="text-white bg-dark">.text-white</p>
+      <p class="text-muted">.text-muted</p>
+      <p class="text-black-50">.text-black-50</p>
+      <p class="text-white-50 bg-dark">.text-black-50</p>
+    </div>
+
+    <!-- teksto lygiavimo klasės  -->
+
+    <div class="container">
+      <h3 class="header">5. TEXT-ALIGN: teksto lygiavimas</h3>
+      <h5 class="m-2">Teksto lygiavimas</h5>
+      <p class="container-fluid border border-danger p-3 m-3 text-left">.text-left</p>
+      <p class="container-fluid border border-danger p-3 m-3 text-right">.text-right</p>
+      <p class="container-fluid border border-danger p-3 m-3 text-center">.text-center</p>
+      <h5 class="mb-2 mt-5">Teksto lygiavimas pagal ekrano dydį (breakpoints)</h5>
+      <p class="container-fluid border border-danger p-3 m-3 text-lg-right">.text-lg-right</p>
+      <p class="container-fluid border border-danger p-3 m-3 text-md-center">.text-md-center</p>
+    </div>
+
+    <!-- mygtukai -->
+
+    <h3 class="header">6. BUTTONS: mygtukai</h3>
+    <div class="container bg-lightgrey p-4">
+      <h5 class="m-2">Mygtukai - spalvos:</h5>
+      <button class="m-2 btn btn-primary">.btn btn-primary</button>
+      <button class="m-2 btn btn-secondary">.btn btn-secondary</button>
+      <button class="m-2 btn btn-success">.btn btn-success</button>
+      <button class="m-2 btn btn-warning">.btn btn-warning</button>
+      <button class="m-2 btn btn-danger">.btn btn-danger</button>
+      <button class="m-2 btn btn-info">.btn btn-info</button>
+      <button class="m-2 btn btn-dark">.btn btn-dark</button>
+      <button class="m-2 btn btn-light">.btn btn-light</button>
+      <button class="m-2 btn btn-link">.btn btn-link</button>
+      <h5 class="m-2">Mygtukai - rėmeliai:</h5>
+      <button class="m-2 btn btn-outline-primary">.btn btn-outline-primary</button>
+      <button class="m-2 btn btn-outline-secondary">.btn btn-outline-secondary</button>
+      <button class="m-2 btn btn-outline-success">.btn btn-outline-success</button>
+      <button class="m-2 btn btn-outline-warning">.btn btn-outline-warning</button>
+      <button class="m-2 btn btn-outline-danger">.btn btn-outline-danger</button>
+      <button class="m-2 btn btn-outline-info">.btn btn-outline-info</button>
+      <button class="m-2 btn btn-outline-dark">.btn btn-outline-dark</button>
+      <button class="m-2 btn btn-outline-light">.btn btn-outline-light</button>
+      <button class="m-2 btn btn-outline-link">.btn btn-outline-link</button>
+      <h5 class="m-2">Mygtukai - dydžiai:</h5>
+      <button class="m-2 btn btn-sm btn-primary">.btn-sm</button>
+      <button class="m-2 btn btn-primary">normal</button>
+      <button class="m-2 btn btn-lg btn-primary">.btn-lg</button>
+      <h5 class="m-2">Mygtukai - grupės:</h5>
+      <div class="btn-group" role="group">
+        <button class="btn btn-secondary">.btn-group</button>
+        <button class="btn btn-secondary">.btn-group</button>
+        <button class="btn btn-secondary">.btn-group</button>
+      </div>
+    </div>
+
+    <!-- išorinių paraščių (margin) klasės -->
+
+    <div class="container">
+      <h3 class="header">7. MARGIN: išorinės paraštės</h3>
+      <h5 class="m-2">Margin: visos keturios kraštinės .m</h5>
+      <div class="bg-primary m-1">.m-1 (margin: 4px;)</div>
+      <div class="bg-primary m-2">.m-2 (margin: 8px;)</div>
+      <div class="bg-primary m-3">.m-3 (margin: 16px;)</div>
+      <div class="bg-primary m-4">.m-4 (margin: 24px;)</div>
+      <div class="bg-primary m-5">.m-5 (margin: 48px;)</div>
+      <h5 class="m-2">Margin-left: kairė .ml</h5>
+      <div class="bg-primary ml-1">.ml-1 (margin-left: 4px;)</div>
+      <div class="bg-primary ml-2">.ml-2 (margin-left: 8px;)</div>
+      <div class="bg-primary ml-3">.ml-3 (margin-left: 16px;)</div>
+      <div class="bg-primary ml-4">.ml-4 (margin-left: 24px;)</div>
+      <div class="bg-primary ml-5">.ml-5 (margin-left: 48px;)</div>
+      <h5 class="mb-2 mt-5">Margin-right: dešinė .mr</h5>
+      <div class="bg-primary mr-1">.mr-1 (margin-right: 4px;)</div>
+      <div class="bg-primary mr-2">.mr-2 (margin-right: 8px;)</div>
+      <div class="bg-primary mr-3">.mr-3 (margin-right: 16px;)</div>
+      <div class="bg-primary mr-4">.mr-4 (margin-right: 24px;)</div>
+      <div class="bg-primary mr-5">.mr-5 (margin-right: 48px;)</div>
+      <h5 class="mb-2 mt-5">Margin-top: viršus .mt</h5>
+      <div class="bg-primary mt-1">.mt-1 (margin-top: 4px;)</div>
+      <div class="bg-primary mt-2">.mt-2 (margin-top: 8px;)</div>
+      <div class="bg-primary mt-3">.mt-3 (margin-top: 16px;)</div>
+      <div class="bg-primary mt-4">.mt-4 (margin-top: 24px;)</div>
+      <div class="bg-primary mt-5">.mt-5 (margin-top: 48px;)</div>
+      <h5 class="mb-2 mt-5">Margin-bottom: apačia .mb</h5>
+      <div class="bg-primary mb-1">.mb-1 (margin-bottom: 4px;)</div>
+      <div class="bg-primary mb-2">.mb-1 (margin-bottom: 8px;)</div>
+      <div class="bg-primary mb-3">.mb-1 (margin-bottom: 16px;)</div>
+      <div class="bg-primary mb-4">.mb-1 (margin-bottom: 24px;)</div>
+      <div class="bg-primary mb-5">.mb-1 (margin-bottom: 48px;)</div>
+      <h5 class="mb-2 mt-5">Margin-right & margin-left: kairė ir dešinė .mx</h5>
+      <div class="bg-primary mx-1">.mx-1 (margin-right: 4px; margin-left: 4px;)</div>
+      <div class="bg-primary mx-2">.mx-2 (margin-right: 8px; margin-left: 8px;)</div>
+      <div class="bg-primary mx-3">.mx-3 (margin-right: 16px; margin-left: 16px;)</div>
+      <div class="bg-primary mx-4">.mx-4 (margin-right: 24px; margin-left: 24px;)</div>
+      <div class="bg-primary mx-5">.mx-5 (margin-right: 48px; margin-left: 48px;)</div>
+      <h5 class="mb-2 mt-5">Margin-top & margin-bottom: viršus ir apačia .my</h5>
+      <div class="bg-primary my-1">.my-1 (margin-top: 4px; margin-bottom: 4px;)</div>
+      <div class="bg-primary my-2">.my-2 (margin-top: 8px; margin-bottom: 8px;)</div>
+      <div class="bg-primary my-3">.my-3 (margin-top: 16px; margin-bottom: 16px;)</div>
+      <div class="bg-primary my-4">.my-4 (margin-top: 24px; margin-bottom: 24px;)</div>
+      <div class="bg-primary my-5">.my-5 (margin-top: 48px; margin-bottom: 48px;)</div>
+      <h5 class="mb-2 mt-5">Margin auto: lygiavimas per vidurį .m-auto</h5>
+      <div class="bg-primary m-auto custom-size">.m-auto (margin: 0 auto;)</div>
+      <h5 class="mb-2 mt-5">Responsive margin: kečiasi priklausomai nuo ekrano dydžio</h5>
+      <div class="bg-primary ml-md-5">ml-md-5: margin-left: 48px; kai ekranas didesnis nei 768px</div>
+    </div>
+
+    <!-- vidinių paraščių (padding) klasės -->
+
+    <div class="container">
+      <h3 class="header">8. PADDING: vidinės paraštės</h3>
+      <h5 class="m-2">Padding: visos keturios kraštinės .p</h5>
+      <div class="bg-success m-2 p-1">.p-1 (padding: 4px;)</div>
+      <div class="bg-success m-2 p-2">.p-2 (padding: 8px;)</div>
+      <div class="bg-success m-2 p-3">.p-3 (padding: 16px;)</div>
+      <div class="bg-success m-2 p-4">.p-4 (padding: 24px;)</div>
+      <div class="bg-success m-2 p-5">.p-5 (padding: 48px;)</div>
+
+      <h5 class="m-2">Padding-left: kairė .pl</h5>
+      <div class="bg-success m-2 pl-1">.pl-1 (padding-left: 4px;)</div>
+      <div class="bg-success m-2 pl-2">.pl-2 (padding-left: 8px;)</div>
+      <div class="bg-success m-2 pl-3">.pl-3 (padding-left: 16px;)</div>
+      <div class="bg-success m-2 pl-4">.pl-4 (padding-left: 24px;)</div>
+      <div class="bg-success m-2 pl-5">.pl-5 (padding-left: 48px;)</div>
+
+      <h5 class="m-2">Padding-right: dešinė .pr</h5>
+      <div class="bg-success m-2 pr-1">.pr-1 (padding-right: 4px;)</div>
+      <div class="bg-success m-2 pr-2">.pr-2 (padding-right: 8px;)</div>
+      <div class="bg-success m-2 pr-3">.pr-3 (padding-right: 16px;)</div>
+      <div class="bg-success m-2 pr-4">.pr-4 (padding-right: 24px;)</div>
+      <div class="bg-success m-2 pr-5">.pr-5 (padding-right: 48px;)</div>
+
+      <h5 class="m-2">Padding-top: viršus .pt</h5>
+      <div class="bg-success m-2 pt-1">.pt-1 (padding-top: 4px;)</div>
+      <div class="bg-success m-2 pt-2">.pt-1 (padding-top: 8px;)</div>
+      <div class="bg-success m-2 pt-3">.pt-1 (padding-top: 16px;)</div>
+      <div class="bg-success m-2 pt-4">.pt-1 (padding-top: 24px;)</div>
+      <div class="bg-success m-2 pt-5">.pt-1 (padding-top: 48px;)</div>
+
+      <h5 class="m-2">Padding-bottom: apačia .pb</h5>
+      <div class="bg-success m-2 pb-1">.pb-1 (padding-bottom: 4px;)</div>
+      <div class="bg-success m-2 pb-2">.pb-1 (padding-bottom: 8px;)</div>
+      <div class="bg-success m-2 pb-3">.pb-1 (padding-bottom: 16px;)</div>
+      <div class="bg-success m-2 pb-4">.pb-1 (padding-bottom: 24px;)</div>
+      <div class="bg-success m-2 pb-5">.pb-1 (padding-bottom: 48px;)</div>
+
+
+      <h5 class="mb-2 mt-5">Padding-right & Padding-left: kairė ir dešinė .px</h5>
+      <div class="bg-success m-2 px-1">.px-1 (padding-right: 4px; padding-left: 4px;)</div>
+      <div class="bg-success m-2 px-2">.px-2 (padding-right: 8px; padding-left: 8px;)</div>
+      <div class="bg-success m-2 px-3">.px-3 (padding-right: 16px; padding-left: 16px;)</div>
+      <div class="bg-success m-2 px-4">.px-4 (padding-right: 24px; padding-left: 24px;)</div>
+      <div class="bg-success m-2 px-5">.px-5 (padding-right: 48px; padding-left: 48px;)</div>
+
+      <h5 class="mb-2 mt-5">Padding-top & Padding-bottom: viršus ir apačia .py</h5>
+      <div class="bg-success m-2 py-1">.py-1 (padding-top: 4px; padding-bottom: 4px;)</div>
+      <div class="bg-success m-2 py-2">.py-2 (padding-top: 8px; padding-bottom: 8px;)</div>
+      <div class="bg-success m-2 py-3">.py-3 (padding-top: 16px; padding-bottom: 16px;)</div>
+      <div class="bg-success m-2 py-4">.py-4 (padding-top: 24px; padding-bottom: 24px;)</div>
+      <div class="bg-success m-2 py-5">.py-5 (padding-top: 48px; padding-bottom: 48px;)</div>
+    </div>
+
+
+    <!-- flex-box  -->
+
+    <div class="container">
+      <h3 class="header">9. DISPLAY: elementų atvaizdavimo tipas</h3>
+      <div class="d-block bg-success p-3 m-2">.d-block</div>
+      <div class="d-inline bg-success p-3 m-2">.d-inline</div>
+      <div class="d-inline-block bg-success p-3 m-2">.d-inline-block</div>
+      <div class="d-none bg-success p-3 m-2">.d-inline-none</div>
+      <h5 class="m-2">Display tipas priklausomai nuo ekrano dydžio:</h5>
+      <div class="d-block d-sm-inline-block bg-success p-3 m-2">.d-block, .d-sm-inline-block</div>
+      <div class="d-block d-sm-inline-block bg-success p-3 m-2">.d-block, .d-sm-inline-block</div>
+      <div class="d-flex bg-success p-3 m-2">.d-flex</div><br>
+      <h5 class="m-2">DISPLAY: flex-box</h5>
+      <div class="d-flex flex-row">
+        <div class="p-2 m-2 bg-info">.flex-row</div>
+        <div class="p-2 m-2 bg-info">.flex-row</div>
+        <div class="p-2 m-2 bg-info">.flex-row</div>
+      </div>
+      <hr>
+      <div class="d-flex flex-column">
+        <div class="p-2 m-2 bg-info">.flex-column</div>
+        <div class="p-2 m-2 bg-info">.flex-column</div>
+        <div class="p-2 m-2 bg-info">.flex-column</div>
+      </div>
+      <h5 class="m-2">FLEX-BOX: Justify Content</h5>
+      <div class="d-flex justify-content-start">
+        <div class="p-2 m-2 bg-info">.justify-content-start</div>
+        <div class="p-2 m-2 bg-info">.justify-content-start</div>
+        <div class="p-2 m-2 bg-info">.justify-content-start</div>
+      </div>
+      <hr>
+        <div class="d-flex justify-content-end">
+        <div class="p-2 m-2 bg-info">.justify-content-end</div>
+        <div class="p-2 m-2 bg-info">.justify-content-end</div>
+        <div class="p-2 m-2 bg-info">.justify-content-end</div>
+      </div>
+      <hr>
+      <div class="d-flex justify-content-center">
+        <div class="p-2 m-2 bg-info">.justify-content-center</div>
+        <div class="p-2 m-2 bg-info">.justify-content-center</div>
+        <div class="p-2 m-2 bg-info">.justify-content-center</div>
+      </div>
+      <hr>
+      <h5 class="m-2">FLEX-BOX: Align Items</h5>
+      <div class="d-flex align-items-start bg-warning custom-height m-3">
+        <div class="p-2 bg-info">.align-items-start</div>
+        <div class="p-2 bg-info">.align-items-start</div>
+        <div class="p-2 bg-info">.align-items-start</div>
+      </div>
+      <hr>
+      <div class="d-flex align-items-end bg-warning custom-height m-3">
+        <div class="p-2 bg-info">.align-items-end</div>
+        <div class="p-2 bg-info">.align-items-end</div>
+        <div class="p-2 bg-info">.align-items-end</div>
+      </div>
+      <hr>
+      <div class="d-flex align-items-center bg-warning custom-height m-3">
+        <div class="p-2 bg-info">.align-items-center</div>
+        <div class="p-2 bg-info">.align-items-center</div>
+        <div class="p-2 bg-info">.align-items-center</div>
+      </div>
+      <div class="d-flex align-items-stretch bg-warning custom-height m-3">
+        <div class="p-2 bg-info">.align-items-stretch</div>
+        <div class="p-2 bg-info">.align-items-stretch</div>
+        <div class="p-2 bg-info">.align-items-stretch</div>
+      </div>
+      <div class="d-flex align-items-baseline bg-warning custom-height m-3">
+        <div class="p-2 bg-info">.align-items-baseline</div>
+        <div class="p-2 bg-info">.align-items-baseline</div>
+        <div class="p-2 bg-info">.align-items-baseline</div>
+      </div>
+      <h5 class="m-2">FLEX-BOX: Align Self</h5>
+      <div class="d-flex align-items-start bg-warning custom-height m-3">
+        <div class="p-2 bg-info">.align-items-start</div>
+        <div class="p-2 bg-info align-self-end">.align-self-end</div>
+        <div class="p-2 bg-info">.align-items-start</div>
+      </div>
+      <h5 class="m-2">FLEX-BOX: Fill</h5>
+      <div class="d-flex bg-warning custom-height m-3">
+        <div class="p-2 bg-info flex-fill">.flex-fill</div>
+        <div class="p-2 bg-warning flex-fill">.flex-fill</div>
+        <div class="p-2 bg-danger flex-fill">.flex-fill</div>
+      </div>
+      <h5 class="m-2">FLEX-BOX: Grow & Shrink</h5>
+      <div class="d-flex bg-warning custom-height m-3">
+        <div class="p-2 bg-info flex-grow-1">.flex-grow-1</div>
+        <div class="p-2 bg-warning">normalus</div>
+        <div class="p-2 bg-danger">normalus</div>
+      </div>
+      <div class="d-flex bg-warning custom-height m-3">
+        <div class="p-2 bg-info flex-shrink-1">.flex-shrink-1</div>
+        <div class="p-2 bg-warning flex-fill">normalus</div>
+        <div class="p-2 bg-danger flex-fill">normalus</div>
+      </div>
+    </div>
+
+    <!-- bootstrap grid: tinklelis -->
+    <div class="container mb-5">
+      <h3 class="header">10. GRID: tinklelis</h3>
+      <div class="row  mb-2">
+        <div class="col-12 bg-primary p-2 text-white">.col-12</div>
+      </div>
+      <div class="row  mb-2">
+        <div class="col-6 bg-primary p-2 text-white">.col-6</div>
+        <div class="col-6 bg-danger p-2 text-white">.col-6</div>
+      </div>
+      <div class="row  mb-2">
+        <div class="col-4 bg-primary p-2 text-white">.col-4</div>
+        <div class="col-4 bg-danger p-2 text-white">.col-4</div>
+        <div class="col-4 bg-primary p-2 text-white">.col-4</div>
+      </div>
+      <div class="row  mb-2">
+        <div class="col-3 bg-primary p-2 text-white">.col-4</div>
+        <div class="col-3 bg-danger p-2 text-white">.col-4</div>
+        <div class="col-3 bg-primary p-2 text-white">.col-4</div>
+        <div class="col-3 bg-danger p-2 text-white">.col-4</div>
+      </div>
+      <div class="row  mb-2">
+        <div class="col-2 bg-primary p-2 text-white">.col-2</div>
+        <div class="col-2 bg-danger p-2 text-white">.col-2</div>
+        <div class="col-2 bg-primary p-2 text-white">.col-2</div>
+        <div class="col-2 bg-danger p-2 text-white">.col-2</div>
+        <div class="col-2 bg-primary p-2 text-white">.col-2</div>
+        <div class="col-2 bg-danger p-2 text-white">.col-2</div>
+      </div>
+      <div class="row  mb-2">
+        <div class="col-1 bg-primary p-2 text-white">.col-1</div>
+        <div class="col-1 bg-danger p-2 text-white">.col-1</div>
+        <div class="col-1 bg-primary p-2 text-white">.col-1</div>
+        <div class="col-1 bg-danger p-2 text-white">.col-1</div>
+        <div class="col-1 bg-primary p-2 text-white">.col-1</div>
+        <div class="col-1 bg-danger p-2 text-white">.col-1</div>
+        <div class="col-1 bg-primary p-2 text-white">.col-1</div>
+        <div class="col-1 bg-danger p-2 text-white">.col-1</div>
+        <div class="col-1 bg-primary p-2 text-white">.col-1</div>
+        <div class="col-1 bg-danger p-2 text-white">.col-1</div>
+        <div class="col-1 bg-primary p-2 text-white">.col-1</div>
+        <div class="col-1 bg-danger p-2 text-white">.col-1</div>
+      </div>
+      <h5 class="m-2">Stulpelių suma visada turi sudaryti 12:</h5>
+      <div class="row  mb-2">
+        <div class="col-6 bg-primary p-2 text-white">.col-6</div>
+        <div class="col-3 bg-danger p-2 text-white">.col-3</div>
+        <div class="col-3 bg-primary p-2 text-white">.col-3</div>
+      </div>
+      <div class="row  mb-2">
+        <div class="col-8 bg-primary p-2 text-white">.col-8</div>
+        <div class="col-4 bg-danger p-2 text-white">.col-4</div>
+      </div>
+
+      <h5 class="m-2">Stulpelių dydžiai pagal ekrano dydį (responsive):</h5>
+      <div class="row  mb-2">
+        <div class="col-8 col-md-2 bg-primary p-2 text-white">.col-8 .col-md-2</div>
+        <div class="col-4 col-md-10 bg-danger p-2 text-white">.col-4 .col-md-10</div>
+      </div>
+      <div class="row  mb-2">
+        <div class="col-6 col-lg-2 bg-primary p-2 text-white">.col-6 .col-lg-2</div>
+        <div class="col-6 col-lg-10 bg-danger p-2 text-white">.col-6 .col-lg-10</div>
+      </div>
+      <div class="row  mb-2">
+        <div class="col-12 col-lg-6 bg-primary p-2 text-white">.col-12 .col-lg-6</div>
+        <div class="col-12 col-lg-6 bg-danger p-2 text-white">.col-12 .col-lg-6</div>
+      </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  border: 1px solid #6C757D;
+  color: 	#6C757D;
+  width: 40%;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 1em;
+}
+.custom-size {
+  width: 300px;
+}
+
+.custom-height {
+height: 60px;
+}
+
+.bg-lightgrey {
+  background: lightgrey;
+}
+
+nav {
+  height: 5vh;
+}
+
+main {
+  height: 55vh;
+}
+
+footer {
+  height: 10vh;
+}
+
+.hero {
+  height: 30vh;
+  width: 100%;
+  background-image: url("https://source.unsplash.com/random/1600x350");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.text-block {
+  max-width: 40%;
+}
